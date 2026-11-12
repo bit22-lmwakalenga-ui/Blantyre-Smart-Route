@@ -20,17 +20,18 @@ st.markdown('<div class="main-header"> Blantyre Smart Route Optimizer</div>', un
 st.markdown('<div class="sub-header">Dijkstra\'s Algorithm Implementation</div>', unsafe_allow_html=True)
 
 # --- Graph Data ---
+
 graph = {
-    "Lunzu": {"Chileka": 7, "Kameza": 9, "Blantyre Town": 12},
+    "Lunzu": {"Chileka": 7, "Kameza": 9, "Blantyre town": 12},
     "Chileka": {"Lunzu": 7, "Baluti": 2},
     "Baluti": {"Chileka": 2, "Nancholi": 12},
-    "Kameza": {"Lunzu": 9, "Blantyre Town": 6, "Ndirande": 9},
-    "Blantyre Town": {"Lunzu": 12, "Kameza": 6, "Nancholi": 6, "Mandala": 10, "Nyambadwe": 8},
-    "Nancholi": {"Baluti": 12, "Bangwe Town": 6, "Naperi": 12, "Mpemba": 9},
+    "Kameza": {"Lunzu": 9, "Blantyre town": 6, "Ndirande": 9},
+    "Blantyre town": {"Lunzu": 12, "Kameza": 6, "Nancholi": 6, "Mandala": 10, "Nyambadwe": 8},
+    "Nancholi": {"Baluti": 12, "Blantyre town": 6, "Naperi": 12, "Mpemba": 9},
     "Mpemba": {"Nancholi": 9, "Chilobwe": 9},
     "Naperi": {"Nancholi": 12, "Mandala": 6, "Chitawira": 2, "Chilobwe": 7, "Zingwangwa": 0.6},
-    "Mandala": {"Blantyre Town": 10, "Naperi": 6, "Nyambadwe": 6},
-    "Nyambadwe": {"Blantyre Town": 8, "Mandala": 6, "Ndirande": 6},
+    "Mandala": {"Blantyre town": 10, "Naperi": 6, "Nyambadwe": 6},
+    "Nyambadwe": {"Blantyre town": 8, "Mandala": 6, "Ndirande": 6},
     "Ndirande": {"Kameza": 9, "Nyambadwe": 6, "Chichiri": 7, "Machinjiri": 16},
     "Chilobwe": {"Mpemba": 9, "Naperi": 7, "Soche": 0.5},
     "Zingwangwa": {"Naperi": 0.6, "Chitawira": 2, "Soche": 0.5},
@@ -43,6 +44,7 @@ graph = {
     "Bangwe": {"Machinjiri": 16, "Chinyonga": 4, "Limbe": 3},
     "Limbe": {"Soche": 2, "Nkolokosa": 2, "Chinyonga": 3, "Bangwe": 3}
 }
+
 
 # --- Dijkstra Algorithm ---
 def run_dijkstra(graph, start, end):

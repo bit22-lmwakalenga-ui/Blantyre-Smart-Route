@@ -92,7 +92,7 @@ with st.sidebar:
     find_route_btn = st.button(" Find Best Route", use_container_width=True, type="primary")
     
     st.markdown("---")
-    st.write("**Note:** The interactive map on the right shows the road network. Drag nodes to rearrange them!")
+    st.write("Feel free to Zoom in on the map to see the names and routes properly")
 
 # --- Main App Logic ---
 if find_route_btn:

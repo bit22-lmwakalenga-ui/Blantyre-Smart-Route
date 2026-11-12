@@ -21,27 +21,27 @@ st.markdown('<div class="sub-header">Dijkstra\'s Algorithm Implementation</div>'
 
 # --- Graph Data ---
 graph = {
-    "Lunzu": {"Chileka": 7, "Kamza": 9, "Bangwe Town": 12},
+    "Lunzu": {"Chileka": 7, "Kameza": 9, "Blantyre Town": 12},
     "Chileka": {"Lunzu": 7, "Baluti": 2},
     "Baluti": {"Chileka": 2, "Nancholi": 12},
-    "Kamza": {"Lunzu": 9, "Bangwe Town": 6, "Ndirande": 9},
-    "Bangwe Town": {"Lunzu": 12, "Kamza": 6, "Nancholi": 6, "Mandala": 10, "Nyambadwe": 8},
-    "Nancholi": {"Baluti": 12, "Bangwe Town": 6, "Naperi": 12, "Mpenba": 9},
-    "Mpenba": {"Nancholi": 9, "Chilobwe": 9},
+    "Kameza": {"Lunzu": 9, "Blantyre Town": 6, "Ndirande": 9},
+    "Blantyre Town": {"Lunzu": 12, "Kameza": 6, "Nancholi": 6, "Mandala": 10, "Nyambadwe": 8},
+    "Nancholi": {"Baluti": 12, "Bangwe Town": 6, "Naperi": 12, "Mpemba": 9},
+    "Mpemba": {"Nancholi": 9, "Chilobwe": 9},
     "Naperi": {"Nancholi": 12, "Mandala": 6, "Chitawira": 2, "Chilobwe": 7, "Zingwangwa": 0.6},
-    "Mandala": {"Bangwe Town": 10, "Naperi": 6, "Nyambadwe": 6},
-    "Nyambadwe": {"Bangwe Town": 8, "Mandala": 6, "Ndirande": 6},
-    "Ndirande": {"Kamza": 9, "Nyambadwe": 6, "Chichiri": 7, "Machinjiri": 16},
-    "Chilobwe": {"Mpenba": 9, "Naperi": 7, "Soche": 0.5},
+    "Mandala": {"Blantyre Town": 10, "Naperi": 6, "Nyambadwe": 6},
+    "Nyambadwe": {"Blantyre Town": 8, "Mandala": 6, "Ndirande": 6},
+    "Ndirande": {"Kameza": 9, "Nyambadwe": 6, "Chichiri": 7, "Machinjiri": 16},
+    "Chilobwe": {"Mpemba": 9, "Naperi": 7, "Soche": 0.5},
     "Zingwangwa": {"Naperi": 0.6, "Chitawira": 2, "Soche": 0.5},
-    "Chitawira": {"Naperi": 2, "Zingwangwa": 2, "Chichiri": 2, "Nkolokosa": 0.5, "Chinganga": 2},
-    "Chichiri": {"Ndirande": 7, "Chitawira": 2, "Machinjiri": 2, "Chinganga": 2},
+    "Chitawira": {"Naperi": 2, "Zingwangwa": 2, "Chichiri": 2, "Nkolokosa": 0.5, "Chinyonga": 2},
+    "Chichiri": {"Ndirande": 7, "Chitawira": 2, "Machinjiri": 2, "Chinyonga": 2},
     "Machinjiri": {"Ndirande": 16, "Chichiri": 2, "Bangwe": 16},
-    "Chinganga": {"Chitawira": 2, "Chichiri": 2, "Nkolokosa": 3, "Bangwe": 4, "Limbe": 3},
-    "Nkolokosa": {"Chitawira": 0.5, "Chinganga": 3, "Soche": 0.5, "Limbe": 2},
+    "Chinyonga": {"Chitawira": 2, "Chichiri": 2, "Nkolokosa": 3, "Bangwe": 4, "Limbe": 3},
+    "Nkolokosa": {"Chitawira": 0.5, "Chinyonga": 3, "Soche": 0.5, "Limbe": 2},
     "Soche": {"Chilobwe": 0.5, "Zingwangwa": 0.5, "Nkolokosa": 0.5, "Limbe": 2},
-    "Bangwe": {"Machinjiri": 16, "Chinganga": 4, "Limbe": 3},
-    "Limbe": {"Soche": 2, "Nkolokosa": 2, "Chinganga": 3, "Bangwe": 3}
+    "Bangwe": {"Machinjiri": 16, "Chinyonga": 4, "Limbe": 3},
+    "Limbe": {"Soche": 2, "Nkolokosa": 2, "Chinyonga": 3, "Bangwe": 3}
 }
 
 # --- Dijkstra Algorithm ---
